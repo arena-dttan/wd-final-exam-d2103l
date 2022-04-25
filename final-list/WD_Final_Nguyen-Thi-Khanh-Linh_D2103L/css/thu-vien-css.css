@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+*{ box-sizing: border-box}
+.container{ width: 1140px; margin: auto}
+.img-100{ width: 100%; height: auto}
+.img-circle{ border-radius: 50%}
+.row{ display: flex; flex-wrap: wrap}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+  padding: 15px;
+/*  border: 1px solid red;*/
+}
+/*--   -spacing style--------------*/
+.py-10{ padding-top: 10px; padding-bottom: 10px}
+.py-30{ padding-top: 30px; padding-bottom: 30px}
+.py-50{ padding-top: 50px; padding-bottom: 50px}
+.p-0{ padding: 0}
+.mt-0{ margin-top: 0}
+.mbt-0{margin-bottom: 0}
+.my-30{ margin-top: 30px; margin-bottom: 30px}
+.mx-auto { margin-left: auto; margin-right: auto}
+/*---------text-align----------------------*/
+.text-right{ text-align: right}
+.text-center { text-align: center}
+/*------display -style ---------------------------*/
+.d-flex{ display: flex}
+.d-block{ display:block}
+.d-none{ display: none}
+.justify-center{ justify-content: center}
+.justify-between{ justify-content: space-between}
+.justify-around{ justify-content: space-around}
+.align-items-center{ align-items: center}
+.align-self-center{ align-self: center}
+/*----------color-style-------------------*/
+.text-white{ color: #fff}
+.text-primary{color: #945336}
+.bg-grey{ background: #F0F0F0}
+.btn-fill-primary
+{
+    background-color:#FFBE00;
+    padding:10px 14px;
+    color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+    border-radius: 35px;
+    cursor: pointer;
+    border: none;
+    transition: all 1s ease-in-out
+}
+.btn-fill-primary:hover{
+     background:linear-gradient(to right,  rgba(255,190,0,1.0), rgba(255,190,0,0.2)) ;
+    color: #fff
+}
+.btn-outline-primary
+{
+    border: 1px solid #FFBE00;
+    background: none;
+    padding: 10px 20px;
+    color: #000000;
+    border-radius: 35px;
+    cursor: pointer;
+	font-weight: 500;
+    transition: all 1s ease-in-out;
+}
+.btn-outline-primary:hover{
+     background-color: #FFBE00;
+    color:#fff; 
+}

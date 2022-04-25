@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{	
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;}
+li, a, button{
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: #000;
+}
+h1{
+	font-size: 36px;
+	margin-bottom: 25px;
+	color: #FFBE00
+}
+h2,h3,h4,p{
+	padding: 10px;
+}
+section{
+	padding: 50px 0;
+}
+.menu{
+	width: 100%;
+	height: 80px;
+	top:0;
+	align-items: center;
+	line-height: 80px;
+	background-color: rgba(255,255,255,.8);	
+	padding: 10px 20px;
+	box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	z-index: 5;
+	position: fixed;
+}
+/*-------style cho menu--------*/
+#menu {
+    display: inline-block;
+    margin-right: 20px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+        font-weight: 500;
+    }
+    
+    li {
+        float: left;
+		margin: 0 20px;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+    }
+    
+    li a:hover,
+    .dropdown:hover {
+        background: #f5ed28;
+    }
+    
+    li a,
+    .dropdown-btn {
+        display: inline-block;
+        color: #333;
+        text-align: center;
+        padding: 0 7px;
+        text-decoration: none;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background: #f5ed28;
+		font-weight: 400;
+        z-index: 5;
+        line-height: 2;
+        border: none;
+        transition: all .3s ease-in-out;
+        text-transform: none;
+        padding-right: 0.5rem;
+        min-width: 227px;
+    }
+    
+    .dropdown-content a {
+		list-style-type: disc;
+        color: #333;
+        padding: 3px 16px;
+        display: block;
+        text-align: left;
+        border: 0!important;
+        padding-left: 1.5rem;
+		transition: all .3s ease-in-out;
+		z-index: 1;
+    }
+    
+    .dropdown-content a:hover {
+        text-decoration: underline;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .item {
+        text-align: left;
+        padding-left: 10px;
+        font-weight: bolder;
+    }
+    
+    .item-symbol {
+        font-size: 7px;
+        position: relative;
+        top: -3px;
+    }
+.logo{
+	cursor: pointer;
+	height: 60px;
+	line-height: 80px;
+	margin-right: auto;
+}
+/*--------hetmenu-------*/
+/*--------banner--------*/
+/*-----arena------*/
+#arena h3{
+	margin-top: 20px;
+}
+#arena .boxgt{
+	margin: 10px;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	text-align: center;
+	width: 22%;
+	background-color: #fff;
+}
+#arena .boxgt:hover{
+	background-color: #ffbe00;
+	color: #fff;
+	transition: all 1.5s ease-in-out;
+}
+#arena .boxgt:hover> img{ 
+    filter: brightness(0) invert(1);
+   -webkit-filter: brightness(0) invert(1);
+	transition: all 1.5s ease-in-out;
+}
+/*---------dtao-tsinh----------*/
+#dtao-tsinh .box-hk{
+	width: 100%;
+	min-height: 450px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+#dtao-tsinh p{
+	line-height: 1.5em
+}
+#dtao-tsinh .img-title-k2{
+	height: 50px;
+}
+#dtao-tsinh .img-k2{
+	text-align: right;
+	margin: 20px
+}
+/*-------dangky-------*/
+#dangky{
+	width: 100%;
+	height: 85vh;
+	background-image: url(../image/bannerdk.jpg);
+	background-size:cover;
+	color: #FFFFFF;
+}
+#dangky h1{ 
+	text-align: center;
+	margin-top: 15px;
+}
+#dangky input, .select{
+	border: 1px solid #fff;
+    background: none;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    border-radius: 35px;
+	margin: 5px;
+	width: 100%;
+}
+#dangky select option{
+	background: #2a2a2a;
+}
+#dangky .box-dk{
+	border: 1px solid #ffbe00;
+	border-radius: 35px;
+	padding: 20px 40px;
+	width: 35%;
+	margin: auto;
+}
+#dangky button{
+	margin: auto;
+	margin-top: 8px
+}
+/*----------footer------*/
+footer{
+	margin-top: 50px;
+	background-color: #eee;
+	width: 100%;
+	min-height: 500px;
+}
+footer input{
+	width: 62%;
+	margin-top: 10px;
+	border: 1px solid #ddd;
+    background: none;
+    padding: 10px 20px;
+    color: #000000;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+footer button{
+	margin-top: 10px;
+	border: 1px solid #ffbe00;
+    background: #ffbe00;
+    padding: 10px 20px;
+    color: #000000;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+

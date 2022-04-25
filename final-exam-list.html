@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Các meta (siêu dữ liệu) -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Tiêu đề hiển thị trên thanh địa chỉ trình duyệt -->
+    <title>Arena Mutimedia</title>
+
+    <!-- icon trên thanh địa chỉ trình duyệt -->
+    <link rel="icon" href="./images/favicon.ico" />
+
+    <!-- Sử dụng font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        
+        table,
+        td,
+        th {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            padding: 10px 20px;
+            text-align: left;
+            margin-left: 80px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        
+        th {
+            background: lightgreen;
+        }
+        
+        #main-page {
+            min-height: 700px;
+            height: 100%;
+            margin: 100px auto !important;
+        }
+        
+        #main-page a {
+            text-decoration: none;
+            color: blue;
+        }
+        
+        #main-page a:hover {
+            display: block;
+            background: yellow;
+            padding: 5px 0;
+            font-weight: bold;
+            color: red;
+            transition: all 200ms;
+        }
+        
+        #main-page a:visited {
+            color: red;
+        }
+        
+        h1 {
+            padding: 50px;
+            text-transform: uppercase;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <section id="logo">
+            <a href="./index.html"> <img src="./images/logo.png"></a>
+        </section>
+        <button class="sign-up"><a href="#">Đăng ký</a></button>
+
+        <!-- menu -->
+        <nav id="menu">
+            <ul>
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#">Giới thiệu</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Multimedia</a>
+                        <a href="#">Arena Multimedia</a>
+                        <a href="#">Tại sao chọn Arena Multimedia</a>
+                        <a href="#">Cơ sở vật chất</a>
+                        <a href="#">Cộng đồng nói về Arena</a>
+                        <a href="#">Nhân vật truyền cảm hứng</a>
+                        <a href="#">Hỏi & đáp</a>
+                        <a href="#"> </a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#">Đào tạo - Tuyển sinh</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Đào tạo</ins></div>
+                        <a href="#">Chương trình đào tạo</a>
+                        <a href="#">Phương pháp đào tạo</a>
+                        <a href="#">Học phí</a>
+
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tuyển sinh</ins></div>
+                        <a href="#">Kết quả thi tuyển</a>
+                        <a href="#">Thông tin tuyển sinh</a>
+                        <a href="#">Lịch tuyển sinh</a>
+                        <a href="#">Tài liệu tuyển sinh</a>
+                        <a href="#">Đề thi mẫu</a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#">Gallery</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Đội ngũ giảng viên</a>
+                        <a href="#">Đồ án nổi bật</a>
+                        <a href="#">Hoạt động học viên</a>
+
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Arena Face</ins></div>
+                        <a href="#">Học viên tiêu biểu</a>
+                        <a href="#">Portfolio học viên</a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#"> Tin tức - Sự kiện</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tin tức</ins></div>
+                        <a href="#">Tin Arena</a>
+                        <a href="#">Tin Multimedia</a>
+                        <a href="#">Tin báo chí</a>
+
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Sự kiện</ins></div>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#"> Liên thông - Tuyển dụng</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Đối tác liên thông</a>
+                        <a href="#">Hỗ trợ tuyển dụng</a>
+                        <a href="#">Tin tuyển dụng</a>
+
+                    </div>
+                </li>
+                <li>
+                    <a href="./final-exam-list.html">Bài thi</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="main-page">
+
+
+        <h1>Danh sách các bài đã nộp</h1>
+
+        <table style="width: 80%;">
+            <thead>
+                <tr>
+                    <th style="width: 30px;">Stt</th>
+                    <th>Họ và tên</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="./final-list/WD_Final_Hoang-Minh-Tu_D2103L/" target="_blank">Hoàng Minh Tú</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <!-- Bạn này bổ sung bày sau -->
+                <tr>
+                    <td>2</td>
+                    <td><a href="./final-list/WD_Final_Nguyen-Huu_Trung_D2103L/" target="_blank">Nguyễn Hữu Trung</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td><a href="./final-list/WD_Final_Ngo-Ha-Lan_D2103L/" target="_blank">Ngô Hà Lan</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td><a href="./final-list/WD_Final_Nguyen-Dang-Anh_D2103L/" target="_blank">Nguyễn Đăng Anh</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td><a href="./final-list/WD_Final_Nguyen-Thuy-Linh_D2103L/" target="_blank">Nguyễn Thùy Linh (C2003H1815)</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td><a href="./final-list/WD_Final_Duong-Thi-Linh_D2103L/" target="_blank">Dương Thị Linh</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td><a href="./final-list/WD_Final_Nguyen-Tai-Tien_D2103L/" target="_blank">Nguyễn Tài Tiến</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td><a href="./final-list/WD_Final_Bui-Thi-Thuy-Linh_D2103L/" target="_blank">Bùi Thị Thùy Linh</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td><a href="./final-list/WD_Final_Le-Quynh-Anh_D2013L/" target="_blank">Lê Quỳnh Anh</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td><a href="./final-list/WD_Final_Nguyen-Thi-Khanh-Linh_D2103L/" target="_blank">Nguyễn Thị Khánh Linh</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>11</td>
+                    <td><a href="#" target="_blank">Phạm Thị Minh Huệ</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+
+
+
+    </main>
+</body>
+
+</html>

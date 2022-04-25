@@ -1,0 +1,72 @@
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.img-100 {
+    width: 100%;
+    height: auto;
+}
+
+.img-20 {
+    width: 20%;
+    height: auto;
+}
+
+.clearfix {
+    display: block;
+}
+
+.w-20 {
+    width: 20%;
+    float: left
+}
+
+.w-25 {
+    width: 25%;
+    float: left;
+}
+
+.w-33 {
+    width: 33.33%;
+    float: left
+}
+
+.w-50 {
+    width: 50%;
+    float: left
+}
+
+.w-66 {
+    width: 66.66%;
+    float: left
+}
+
+.w-75 {
+    width: 75%;
+    float: left
+}
+
+.clearfix {
+    clear: both;
+    display: block;
+}
+
+.mg-t-20 {
+    margin-top: 20px;
+}
+
+.mg-t-50 {
+    margin-top: 50px;
+}
+
+.mg-b-50 {
+    margin-bottom: 50px;
+}

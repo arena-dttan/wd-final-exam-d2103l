@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./CSS/font-awesome-5.css">
+
+    <link rel="stylesheet" href="./CSS/animate.css">
+    <link rel="stylesheet" href="./CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="./CSS/owl.theme.default.min.css">
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                stagePadding: 50,
+                dotsEach: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+
+    <script src="./js/wow.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 50,
+            mobile: true,
+            live: true
+        });
+        wow.init();
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        html,
+        body {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+        }
+        
+        h1 {
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        h4 {
+            font-size: 16 px;
+            font-weight: 700;
+        }
+        
+        h5 {
+            font-size: 14px;
+            font-weight: 700;
+        }
+        
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        header {
+            position: fixed;
+            margin: 0;
+            z-index: 10;
+            background-color: #fff;
+        }
+        
+        main a {
+            text-decoration: none;
+            color: #ffc600;
+        }
+        
+        main a:hover {
+            color: chocolate;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        
+        .w-25 {
+            width: 25%;
+            float: left;
+            padding: 15px
+        }
+        
+        .w-33 {
+            width: 33.33%;
+            float: left;
+            padding: 15px
+        }
+        
+        .w-50 {
+            width: 50%;
+            float: left;
+            padding: 15px
+        }
+        
+        .w-66 {
+            width: 66.66%;
+            float: left;
+            padding: 15px
+        }
+        
+        .w-75 {
+            width: 75%;
+            float: left;
+            padding: 15px
+        }
+        
+        .clearfix {
+            clear: both;
+            height: 0
+        }
+        
+        footer {
+            background: #CFCFCF;
+            min-height: 500px;
+            color: #3C3C3C;
+            text-align: left;
+        }
+        
+        footer h3 {
+            margin-left: 15px;
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+        
+        footer a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        footer h5 {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        
+        footer address {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        #menu {
+            display: inline-block;
+            box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+            margin: 0
+        }
+        /* Sử dụng cho menu */
+        
+        ul {
+            list-style-type: none;
+            margin-bottom: 20px;
+            margin-top: 40px;
+            padding: 0;
+            overflow: hidden;
+            /* background: #F8C800; */
+            background-color: transparent;
+            font-weight: 700;
+            /* text-transform: uppercase; */
+        }
+        
+        li {
+            float: left;
+            /* border-right: 1px solid white; */
+            text-transform: uppercase;
+            display: block;
+            padding: 10px;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+            font-size: 16px;
+        }
+        
+        li a:hover,
+        .dropdown:hover {
+            background: #f5ed28;
+        }
+        
+        li a,
+        .dropdown-btn {
+            display: inline-block;
+            color: #333;
+            text-align: center;
+            padding: 0 7px;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 80px;
+            background: #f5ed28;
+            z-index: 1;
+            line-height: 2;
+            border: none;
+            transition: all .3s ease-in-out;
+            text-transform: none;
+            padding: 0;
+            min-width: 227px;
+        }
+        
+        .dropdown-content a {
+            color: #333;
+            padding: 3px 16px;
+            display: block;
+            text-align: left;
+            background-color: transparent;
+            /* transition: all .3s ease-in-out; */
+            border: 0!important;
+            padding-left: 1.5rem;
+        }
+        
+        .dropdown-content a:hover {
+            /* background-color: tomato; */
+            background-image: linear-gradient(to right, #ffc600, #F8C800, #f5ed28);
+        }
+        
+        .dropdown:hover>.dropdown-content {
+            display: block;
+        }
+        
+        .item {
+            text-align: left;
+            padding-left: 10px;
+            font-weight: bolder;
+        }
+        
+        .item-symbol {
+            font-size: 7px;
+            position: relative;
+            top: -3px;
+        }
+        
+        .logo {
+            float: left;
+            width: 10%;
+            margin-left: 50px;
+            margin-right: 150px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .subscribe-btn {
+            padding: 10px 15px;
+            border-radius: 50px;
+            font-size: 14px;
+            background-color: #ffc600;
+            color: #333;
+            border: none;
+            transition: all ease-out 1s;
+            cursor: pointer;
+        }
+        
+        .subscribe-btn:hover {
+            color: #fff;
+            background-image: linear-gradient(to right, #ffc600, #F8C800, #f5ed28);
+        }
+        
+        .slide {
+            width: 100%;
+            height: 450px;
+            margin-top: 0;
+            margin-bottom: 80px;
+        }
+        
+        .slide img {
+            height: 300px;
+            margin-top: 150px;
+        }
+        
+        #Arena .box-shadow {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #CFCFCF;
+            padding: 20px;
+            text-align: center;
+            min-height: 240px;
+        }
+        
+        #Arena .box-shadow:hover {
+            background-color: #f5ed28;
+            box-shadow: 0 0 5px #CCCCCC
+        }
+        
+        #Arena .box-shadow img {
+            margin-bottom: 20px;
+        }
+        
+        #training .box-shadow {
+            background-color: #fff;
+            box-shadow: 0 0 10px #CFCFCF;
+            padding: 15px;
+            padding-top: 25px;
+            min-height: 230px;
+        }
+        
+        section {
+            text-align: left;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap
+        }
+        
+        .col-5 {
+            width: 41.66%;
+        }
+        
+        .img-100 {
+            width: 100%;
+            height: auto;
+        }
+        
+        .form-wrap {
+            text-align: center;
+            width: 50%;
+            border: solid rgb(255, 252, 47) 1px;
+            border-radius: 30px;
+            padding: 30px;
+            position: absolute;
+            z-index: 99;
+            top: 10%;
+            left: 25%;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+        }
+        
+        .overlay {
+            width: 100%;
+            height: 746.328px;
+            background-color: #000000;
+            opacity: 60%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        input,
+        select {
+            color: #fff;
+            font-size: 20px;
+            width: 50%;
+            padding: 20px;
+            background: none;
+            border: 1px #fff solid;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            margin-top: 20px;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+        }
+        
+        input:focus,
+        select:focus {
+            border: rgb(255, 252, 47) 1px solid;
+        }
+        
+        .btn-primary {
+            font-size: 20px;
+            padding: 20px;
+            background: rgb(255, 252, 47);
+            border: none;
+            margin-top: 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            -ms-transition: all 1s;
+            -o-transition: all 1s;
+        }
+        
+        .btn-primary:hover {
+            background: none;
+            color: rgb(255, 252, 47);
+            border: solid rgb(255, 252, 47) 1px;
+        }
+        
+        .box {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <img src="images/logo.png" alt="" class="logo">
+            <ul>
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#">Giới thiệu</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Multimedia</a>
+                        <a href="#">Arena Multimedia</a>
+                        <a href="#">Tại sao chọn Arena Multimedia</a>
+                        <a href="#">Cơ sở vật chất</a>
+                        <a href="#">Cộng đồng nói về Arena</a>
+                        <a href="#">Nhân vật truyền cảm hứng</a>
+                        <a href="#">Hỏi & đáp</a>
+                        <a href="#"> </a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#">Đào tạo - Tuyển sinh</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Đào tạo</ins></div>
+                        <a href="#">Chương trình đào tạo</a>
+                        <a href="#">Phương pháp đào tạo</a>
+                        <a href="#">Học phí</a>
+
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tuyển sinh</ins></div>
+                        <a href="#">Kết quả thi tuyển</a>
+                        <a href="#">Thông tin tuyển sinh</a>
+                        <a href="#">Lịch tuyển sinh</a>
+                        <a href="#">Tài liệu tuyển sinh</a>
+                        <a href="#">Đề thi mẫu</a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#">Gallery</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Đội ngũ giảng viên</a>
+                        <a href="#">Đồ án nổi bật</a>
+                        <a href="#">Hoạt động học viên</a>
+
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Arena Face</ins></div>
+                        <a href="#">Học viên tiêu biểu</a>
+                        <a href="#">Portfolio học viên</a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#"> Tin tức - Sự kiện</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tin tức</ins></div>
+                        <a href="#">Tin Arena</a>
+                        <a href="#">Tin Multimedia</a>
+                        <a href="#">Tin báo chí</a>
+
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Sự kiện</ins></div>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#"> Liên thông - Tuyển dụng</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Đối tác liên thông</a>
+                        <a href="#">Hỗ trợ tuyển dụng</a>
+                        <a href="#">Tin tuyển dụng</a>
+
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Liên hệ</a>
+                </li>
+
+                <input type="submit" name="submit" class="subscribe-btn" value="Đăng ký">
+            </ul>
+        </nav>
+    </header>
+    <div class="slide">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="./images/1.jpg" alt=""></div>
+            <div class="item"><img src="./images/2.png" alt=""></div>
+            <div class="item"><img src="./images/3.png" alt=""></div>
+            <div class="item"><img src="./images/4.png" alt=""></div>
+            <div class="item"><img src="./images/5.png" alt=""></div>
+            <div class="item"><img src="./images/6.png" alt=""></div>
+            <div class="item"><img src="./images/7.jpg" alt=""></div>
+            <div class="item"><img src="./images/8.jpg" alt=""></div>
+            <div class="item"><img src="./images/9.png" alt=""></div>
+            <div class="item"><img src="./images/10.jpg" alt=""></div>
+            <div class="item"><img src="./images/11.jpg" alt=""></div>
+        </div>
+    </div>
+    <main>
+        <section id="Arena">
+            <div class="container">
+                <div class="w-33">
+                    <h1><a href="#"> Arena<br> Multimedia</a></h1>
+                    <p>Thương hiệu số 1 tại Châu Á về đào tạo Chuyên gia Mỹ thuật Đa phương tiện </p>
+                </div>
+                <div class="w-66">
+                    <div class="w-25">
+                        <div class="box-shadow">
+                            <img src="./images/icon-1.png" alt="">
+                            <p>25 năm kinh nghiệm</p>
+                        </div>
+                    </div>
+                    <div class="w-25">
+                        <div class="box-shadow">
+                            <img src="./images/icon-2.png" alt="">
+                            <p>250 trung tâm</p>
+                        </div>
+                    </div>
+                    <div class="w-25">
+                        <div class="box-shadow">
+                            <img src="./images/icon-3.png" alt="">
+                            <p>450.000 học viên</p>
+                        </div>
+                    </div>
+                    <div class="w-25">
+                        <div class="box-shadow">
+                            <img src="./images/icon-4.png" alt="">
+                            <p>20 quốc gia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="clearfix"></div>
+
+        <section id="training">
+            <div class="container">
+                <div class="box-shadow">
+                    <h1><a href="#"> Đào tạo - Tuyển sinh</a></h1>
+                    <hr>
+                    <p>Chương trình Chuyên gia Mỹ thuật Đa phương tiện (Arena Multimedia Specialist Program - AMSP) kéo dài 30 tháng (4 kỳ học) trong lĩnh cực: Thiết kế Truyền thông & Quảng cáo và Sản xuất Nội dung Giải trí Kỹ thuật số.</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-5" style="padding: 0;padding-right: 50px">
+                            <h1>THIẾT KẾ WEB & ỨNG DỤNG KÝ THUẬT SỐ</h1>
+                            <br>
+                            <p>Học kỳ 2 cung cấp những kiến thức để thiết kế ra giao diện một website hoàn chỉnh cùng những ứng dụng phục vụ cho Digital Marketing, Social Media, App Mobile. Để làm được điều đó, học viên phải trải qua các môn học như: Thiết
+                                kế giao diện web cơ bản, phát triển trang web tương tác, sử dụng hình ảnh động cho web bằng Animate CC, tiếp thị số khá niệm truyền thông... Kết thúc kỳ 2, học viên sẽ có cơ hội đảm nhận nhiều vị trí khác nhau, từ nhà thiết
+                                kế web đến thiết kế đồ họa động</p>
+                        </div>
+                        <div class="col-5">
+                            <h4 style="float: right;">WEBSITE & DIGITAL DESIGN</h4>
+                            <br>
+                            <img src="./images/hk2-img.jpg" style="width: 100%" style="float: right;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br>
+
+    <div class="animate__animated animate__rubberBand animate__delay-2s animate__slower">
+        <div class="box">
+            <img class="img-100" src="./images/banner.jpg">
+            <div class="overlay"></div>
+            <div class="form-wrap">
+                <h1 style="color: rgb(255, 252, 47);">Hành trang kỹ năng tương lai</h1>
+                <h1 style="color: rgb(255, 252, 47);">Đăng ký ngay</h1>
+                <form action="" method="get" class="info-request">
+                    <div class="">
+                        <input type="text" name="name" id="name" placeholder="Your Name *" required>
+                    </div>
+                    <div class="">
+                        <input type="number" name="phone" id="phone" placeholder="Phone Number *" required>
+                    </div>
+                    <div class="">
+                        <input type="email" name="email" id="email" placeholder="Email *" required>
+                    </div>
+                    <div class="">
+                        <select id="infor" name="infor">
+                        <option value="" disabled selected hidden>Request Information *</option>
+                        <option value="EMS Service">EMS Service</option>
+                        <option value="Logistic">Logistic</option>
+                        <option value="Technical Solution">Technical Solution</option>
+                    </select>
+                    </div>
+                    <div class="">
+                        <button class="btn-primary">SEND REQUEST</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <div class="container">
+
+        <section id="HCM">
+            <div class="w-75">
+                <h3>TP.HCM</h3>
+                <hr>
+                <div class="w-33">
+                    <h5><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%C3%A0o+T%E1%BA%A1o+M%E1%BB%B9+Thu%E1%BA%ADt+%C4%90a+Ph%C6%B0%C6%A1ng+Ti%E1%BB%87n+Arena+Multimedia/@10.7787258,106.6878354,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f3a9cf24ed9:0x738e9121412bf470!8m2!3d10.7787344!4d106.6900151">Nguyễn Đình Chiểu</a></h5>
+                    <hr>
+                    <address>212-214 Nguyễn Đình Chiểu, P. Võ Thị Sáu, Q. 3</address>
+                    <address>Tel: 1800 1525</address>
+                    <address>Email: arena@aprotrain.com</address>
+                </div>
+
+                <div class="w-33">
+                    <h5><a href="https://www.google.com/maps/place/Arena+Multimedia/@10.8119342,106.6762716,17z/data=!3m1!4b1!4m5!3m4!1s0x317528de33d97b13:0x31fc933907ec0f93!8m2!3d10.8119357!4d106.6784367">Nguyễn Kiệm</a></h5>
+                    <hr>
+                    <address>778/10 Nguyễn Kiệm, P. 4, Q. Phú Nhuận</address>
+                    <address>Tel: 1800 6325</address>
+                    <address>Email: arena@aprotrain.com</address>
+                </div>
+
+                <div class="w-33">
+                    <h5><a href="https://www.google.com/maps/place/6+T%C3%A2n+K%E1%BB%B3+T%C3%A2n+Qu%C3%BD,+Ph%C6%B0%E1%BB%9Dng+13,+T%C3%A2n+B%C3%ACnh,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8039187,106.6346936,17z/data=!3m1!4b1!4m5!3m4!1s0x3175295a715fa2fb:0xa85f7fc3936c5e02!8m2!3d10.8039467!4d106.6368735?hl=vi-VN">Tân Kỳ Tân Quý</a></h5>
+                    <hr>
+                    <address>Số 6 Tân Kỳ Tân Quý, P.15, Q.Tân Bình</address>
+                    <address>Tel: 1800 2074</address>
+                    <address>Email: arena@aprotrain.com</address>
+                </div>
+            </div>
+        </section>
+
+        <section id="HN">
+            <div class="w-75">
+                <h3>HÀ NỘI</h3>
+                <hr>
+                <div class="w-33">
+                    <h5><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%C3%A0o+t%E1%BA%A1o+M%E1%BB%B9+thu%E1%BA%ADt+%C4%90a+ph%C6%B0%C6%A1ng+ti%E1%BB%87n+Arena+Multimedia/@20.9792553,105.7830079,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab60b64b6333:0xb87e2e511eabfce1!8m2!3d20.9792553!4d105.7851966">Trúc Khê</a></h5>
+                    <hr>
+                    <address>80 Trúc Khê, P. Láng Hạ, Q. Đống Đa</address>
+                    <address>Tel: 1800 1542</address>
+                    <address>Email: arena2@aprotrain.com</address>
+                </div>
+
+                <div class="w-33">
+                    <h5><a href="https://www.google.com/maps/place/Arena+Multimedia/@21.025842,105.7857707,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abae2b59b22d:0x33cf1d9360295f83!8m2!3d21.0258794!4d105.7880322">Phạm Văn Bạch</a></h5>
+                    <hr>
+                    <address>D29 Phạm Văn Bạch, P. Yên Hòa, Q. Cầu Giấy</address>
+                    <address>Tel: 1800 1542</p>
+                    <address>Email: arena2@aprotrain.com</address>
+                </div>
+
+                <div class="w-33">
+                    <h5><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%C3%A0o+t%E1%BA%A1o+M%E1%BB%B9+thu%E1%BA%ADt+%C4%90a+ph%C6%B0%C6%A1ng+ti%E1%BB%87n+Arena+Multimedia/@20.9774154,105.7818523,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ad5461a242e1:0xf137d5e61bd7bb74!8m2!3d20.9774014!4d105.7840545">Trần Phú</a></h5>
+                    <hr>
+                    <address>110 Trần Phú, P. Mộ Lao, Q. Hà Đông</address>
+                    <address>Tel: 1800 1542</address>
+                    <address>Email: arena2@aprotrain.com</address>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</footer>
+
+</html>

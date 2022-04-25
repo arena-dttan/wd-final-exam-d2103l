@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carouse 2 - Basic</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/mainstyle.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/docs.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+
+    </style>
+
+    <!-- js -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- cài đặt -->
+    <script>
+        $(document).ready(function() {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="head">
+        <img src="./images/logo.png" class="img-100" style="float: left;">
+        <nav id="menu">
+            <ul>
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#">Giới thiệu</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Multimedia</a>
+                        <a href="#">Arena Multimedia</a>
+                        <a href="#">Tại sao chọn Arena Multimedia</a>
+                        <a href="#">Cơ sở vật chất</a>
+                        <a href="#">Cộng đồng nói về Arena</a>
+                        <a href="#">Nhân vật truyền cảm hứng</a>
+                        <a href="#">Hỏi & đáp</a>
+                        <a href="#"> </a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#">Đào tạo - Tuyển sinh</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Đào tạo</ins></div>
+                        <a href="#">Chương trình đào tạo</a>
+                        <a href="#">Phương pháp đào tạo</a>
+                        <a href="#">Học phí</a>
+
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tuyển sinh</ins></div>
+                        <a href="#">Kết quả thi tuyển</a>
+                        <a href="#">Thông tin tuyển sinh</a>
+                        <a href="#">Lịch tuyển sinh</a>
+                        <a href="#">Tài liệu tuyển sinh</a>
+                        <a href="#">Đề thi mẫu</a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#">Gallery</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Đội ngũ giảng viên</a>
+                        <a href="#">Đồ án nổi bật</a>
+                        <a href="#">Hoạt động học viên</a>
+
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Arena Face</ins></div>
+                        <a href="#">Học viên tiêu biểu</a>
+                        <a href="#">Portfolio học viên</a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#"> Tin tức - Sự kiện</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tin tức</ins></div>
+                        <a href="#">Tin Arena</a>
+                        <a href="#">Tin Multimedia</a>
+                        <a href="#">Tin báo chí</a>
+
+                        <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Sự kiện</ins></div>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#"> Liên thông - Tuyển dụng</a><i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Đối tác liên thông</a>
+                        <a href="#">Hỗ trợ tuyển dụng</a>
+                        <a href="#">Tin tuyển dụng</a>
+
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="sign-in">ĐĂNG KÝ</button>
+
+
+    </div>
+    <hr width="100%" size="5px" color="#666">
+    <hr width="100%" size="5px" color="#666">
+
+
+    <div class="slide-1">
+        <div class="owl-carousel owl-theme">
+            <div class="itemslider">
+                <img src="/images/1.jpg"></img>
+            </div>
+            <div class="itemslider">
+                <img src="/images/2.png"></img>
+            </div>
+            <div class="itemslider">
+                <img src="/images/3.png"></img>
+            </div>
+            <div class="itemslider">
+                <img src="/images/4.png"></img>
+            </div>
+            <div class="itemslider">
+                <img src="/images/5.png"></img>
+            </div>
+            <div class="itemslider">
+                <img src="/images/6.png"></img>
+            </div>
+            <div class="itemslider">
+                <img src="/images/7.jpg"></img>
+            </div>
+            <div class="itemslider">
+                <img src="/images/8.jpg"></img>
+            </div>
+            <div class="itemslider">
+                <img src="/images/9.png"></img>
+            </div>
+            <div class="itemslider">
+                <img src="/images/10.jpg"></img>
+            </div>
+            <div class="itemslider">
+                <img src="/images/11.jpg"></img>
+            </div>
+        </div>
+    </div>
+
+    <div class="arena">
+        <div class="col-33" style="float: left; margin-right: 10px; margin-left: 2px;">
+            <h1 style="text-align: left; color: rgb(255, 220, 19);">Arena Multimedia</h1>
+            <h3 style="text-align: left;">Thương hiệu số 1 tại Châu Á về đào tạo Chuyên gia Mỹ thuật Đa phương tiện.</h3>
+        </div>
+        <div class="col-33" style="float: left;">
+            <div class="col-50">
+                <div class="box-shadow"><img src="./images/icon-1.png">
+                    <h3>25 năm kinh nghiệm</h3>
+                </div>
+            </div>
+            <div class="col-50">
+                <div class="box-shadow"><img src="./images/icon-2.png">
+                    <h3>250 trung tâm</h3>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-33" style="float: left;">
+            <div class="col-50">
+                <div class="box-shadow"><img src="./images/icon-3.png">
+                    <h3>450.000 sinh viên</h3>
+                </div>
+
+            </div>
+            <div class="col-50">
+                <div class="box-shadow"><img src="./images/icon-4.png">
+                    <h3>20 quốc gia</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <h1 class="daotao" style="text-align: left; color: rgb(255, 220, 19);">Đào tạo - Tuyển sinh</h1>
+    <hr width="100%" size="5px" color="#666">
+    <p>Chương trình Chuyên gia Mỹ thuật Đa phương tiện (Arena Multimedia Specialist Program – AMSP) kéo dài 30 tháng (4 kỳ học) trong lĩnh vực: Thiết kế Truyền thông & Quảng cáo và Sản xuất Nội dung Giải trí Kỹ thuật số</p>
+    <div class="col-50">
+        <h3>Thiết kế web và ứng dụng kỹ thuật số</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum est distinctio dolorum, nisi impedit nobis ex culpa assumenda quos, exercitationem doloribus architecto unde numquam dolorem rem tempore, dolores molestiae minus.</p>
+    </div>
+    <div class="col-50">
+        <img src="./images/hk2-title.webp" class="img-100">
+        <img class="animate__animated animate__backInRight animate__delay-1s" src="./images/hk2-img.jpg"></div>
+
+    <section id="dang-ky">
+        <div class="container">
+            <h2 style="color: yellow;" class="animate__animated animate__bounce animate__delay-1s">Hành trang ngay kỹ năng tương lai<br>Đăng ký ngay</h2>
+            <form name="form-1" class="form-1" id="form-1">
+                <div class="row">
+                    <input type="text" name="ho-ten" class="input" placeholder="Họ và tên *">
+                </div>
+                <div class="row">
+                    <input type="text" name="dien-thoai" class="input" placeholder="Điện thoại *">
+                </div>
+
+                <div class="row">
+                    <input type="text" name="email" class="input" placeholder="Email *">
+                </div>
+                <div class="row">
+                    <select name="select" class="select">
+                <option value="">Địa điểm nhập học * </option>
+                <option value="hn">Hà Nội </option>
+                <option value="hcm">Hồ Chí Minh </option>
+            </select>
+                </div>
+                <div class="row">
+                    <input type="submit" name="submit" class="btn" value="Đăng ký tư vấn">
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <h3>TP.HCM</h3>
+        <hr width="100%" size="5px" color="blue">
+
+        <div class="col-33" style="float: left;">
+            <h4>Nguyễn Đình Chiểu</h4>
+            <hr width="80%">
+            <p>212 Nguyen Dinh Chieu, Vo Thi Sau</p>
+            <p>Tel: 1800 1542</p>
+            <p>Email: arena2@aprotrain.com</p>
+        </div>
+        <div class="col-33" style="float: left;">
+            <h4>Nguyễn Đình Chiểu</h4>
+            <hr width="80%">
+            <p>212 Nguyen Dinh Chieu, Vo Thi Sau</p>
+            <p>Tel: 1800 1542</p>
+            <p>Email: arena2@aprotrain.com</p>
+        </div>
+        <div class="col-33" style="float: left;">
+            <h4>Nguyễn Đình Chiểu</h4>
+            <hr width="80%">
+            <p>212 Nguyen Dinh Chieu, Vo Thi Sau</p>
+            <p>Tel: 1800 1542</p>
+            <p>Email: arena2@aprotrain.com</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
